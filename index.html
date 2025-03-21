@@ -6,7 +6,76 @@
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-    <h1></h1>
+    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
+    <img id="Bandeja pescado frito" src="pescado_frito.jpg">
+    
+    <!--Datos del cliente--> 
+    <br><br>
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" required>
+    
+    <br><br>
+    <label for="apellidos">Apellidos: </label>
+    <input type="text" id="apellidos" required>
+
+    <br><br>
+    <label for="email">Email: </label>
+    <input type="text" id="email" required>
+
+    <br><br>
+    <label for="direccion">Direccion: </label>
+    <input type="text" id="nombre" minlength="18" required>
+    
+    <br><br>
+    <label for="telefono">Teléfono: </label>
+    <input type="number" id="telefono" pattern="[0-9]{9}" required>
+
+    <br><br>
+    <label for="horaentrega">Hora aproximada de entrega: </label>
+    <input type="datetime" id="horaentrega" required>
+
+    <!--Pedido de pescado-->
+    <br><br>
+
+    <label for="tipo_pescado">Tipo de pescado: </label>
+        <select id="tipo_pescado" required>
+            <option value="opciones">Selecciona una opción</option>
+            <option value="calamares">Calamares</option>
+            <option value="adobo">Adobo</option>
+            <option value="boquerones">Boquerones</option>
+        </select>
+    <br><br>
+
+    <label for="raciones">Número de raciones: </label>
+    <input type="number" id="raciones"  min="1" max="5" required>
+    <br><br>
+
+    <label for="acompañamiento">Acompañamiento: </label>
+    <label for="patatas_fritas">Patatas fritas</label>
+    <input type="checkbox" id="patatasfritas">
+    <label for="ensaladilla">Ensaladilla</label>
+    <input type="checkbox" id="ensaladilla">
+    <label for="manzanilla">Botella de Manzanilla</label>
+    <input type="checkbox" id="manzanilla">
+    <br><br>
+
+    <label for="metodo_pago">Método de pago: </label>
+        <select id="metodo_pago" required>
+            <option value="opciones">Selecciona una opción</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="paypal">Paypal</option>
+        </select>
+    <br><br>
+    
+    <label for="instrucciones">Instrucciones adicionales: </label>
+    <input type="text" id="instrucciones" maxlength="150">
+    <br><br>
+
+    <button id="boton_envio">Enviar pedido</button>
+    <br><br>
+
+    <footer>Lucía Velasco Casado</footer>
 
     <script src="ex_html-css-js.js"></script>
 
