@@ -37,26 +37,27 @@
     <!--Pedido de pescado-->
     <br><br>
 
-    <label for="tipo_pescado">Tipo de pescado: </label>
-        <select id="tipo_pescado" required>
-            <option value="opciones">Selecciona una opción</option>
-            <option value="calamares">Calamares</option>
-            <option value="adobo">Adobo</option>
-            <option value="boquerones">Boquerones</option>
-        </select>
+    <label for="tipo_pescado">Tipo de pescado: </label><br><br>
+    <input type="radio" id="calamares" name="tipo_pescado">
+    <label for="calamares">Calamares</label><br><br>
+    <input type="radio" id="adobo" name="tipo_pescado">
+    <label for="adobo">Adobo</label><br><br>
+    <input type="radio" id="boquerones" name="tipo_pescado">
+    <label for="boquerones">Boquerones</label><br><br>
+   
     <br><br>
 
     <label for="raciones">Número de raciones: </label>
     <input type="number" id="raciones"  min="1" max="5" required>
     <br><br>
 
-    <label for="acompañamiento">Acompañamiento: </label>
-    <label for="patatas_fritas">Patatas fritas</label>
+    <label for="acompañamiento">Acompañamiento: </label><br><br>
     <input type="checkbox" id="patatasfritas">
-    <label for="ensaladilla">Ensaladilla</label>
+    <label for="patatas_fritas">Patatas fritas</label><br><br>
     <input type="checkbox" id="ensaladilla">
-    <label for="manzanilla">Botella de Manzanilla</label>
+    <label for="ensaladilla">Ensaladilla</label><br><br>
     <input type="checkbox" id="manzanilla">
+    <label for="manzanilla">Botella de Manzanilla</label><br><br>
     <br><br>
 
     <label for="metodo_pago">Método de pago: </label>
@@ -69,7 +70,7 @@
     <br><br>
     
     <label for="instrucciones">Instrucciones adicionales: </label>
-    <input type="text" id="instrucciones" maxlength="150">
+    <textarea type="text" id="instrucciones" maxlength="150"></textarea>
     <br><br>
 
     <button id="boton_envio">Enviar pedido</button>
