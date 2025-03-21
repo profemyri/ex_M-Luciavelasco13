@@ -2,6 +2,11 @@ body {
    background-color: #faf3e0;
 }
 
+body.oscuro {
+   background-color: black;
+   color: white;
+}
+
 p {
    color: #2c3e50;
    font-family: Arial, sans-serif;
